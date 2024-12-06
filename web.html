@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านคิมอาหารตามสั่งแสนอร่อย</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            color: #333;
+            background-image: url('cook1.webp');
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow-x: hidden;
+        }
+
+        h1, h2 {
+            color: #fff;
+            font-weight: 600;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 0.5em;
+        }
+
+        h2 {
+            font-size: 2.2em;
+            margin-bottom: 1em;
+        }
+
+        p {
+            color: #fff;
+            font-size: 1.1em;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 1.2em;
+            color: #fff;
+            margin-bottom: 30px;
+        }
+
+        ul li {
+            font-weight: 600;
+            cursor: pointer;
+            transition: color 0.3s, transform 0.3s;
+        }
+
+        ul li:hover {
+            color: #FF5722;
+            transform: scale(1.1);
+        }
+
+        .menu-card {
+            display: flex;
+            justify-content: space-around;
+            gap: 30px;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin-top: 30px;
+            padding: 10px;
+            animation: fadeIn 2s forwards;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        .card p {
+            font-size: 1.1em;
+            font-weight: 600;
+            margin-top: 10px;
+            color: #333;
+        }
+
+        a {
+            color: #FF5722;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        address {
+            text-align: center;
+            font-style: normal;
+            margin-top: 40px;
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #FF5722;
+            color: white;
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer a:hover {
+            color: #FF7043;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* สำหรับมือถือ */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            h2 {
+                font-size: 1.8em;
+            }
+
+            ul {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu-card {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>ร้านคิมอาหารตามสั่ง<br>Kim's Thai Eats</h1>
+    <p>เปิดเวลา 8:00-23:00 น.<br>Open 8:00 AM to 11:00 PM</p>
+
+    <!-- เมนูอาหาร -->
+    <section>
+        <h2>Menu/เมนู</h2>
+        <ul>
+            <li>อาหารอีสาน</li>
+            <li>อาหารอิตาลี</li>
+            <li>อาหารไทย</li>
+            <li>อาหารฝรั่งเศส</li>
+            <li>อาหารจีน</li>
+        </ul>
+    </section>
+
+    <!-- เมนูอาหารที่แนะนำ -->
+    <section>
+        <h2>เมนูและอาหารที่แนะนำ<br>Recommended Menu and Dishes</h2>
+        <div class="menu-card">
+            <div class="card">
+                <img src="https://cdn.pixabay.com/photo/2016/10/25/13/28/papaya-salad-1768888_640.jpg" alt="ส้มตำ">
+                <p>ส้มตำ<br>Som Tum</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">click here</a>
+            </div>
+            <div class="card">
+                <img src="https://tse2.mm.bing.net/th?id=OIP.AdmKX4iBxYyT_K6h0zj9QQHaHa&pid=Api&P=0&h=180" alt="อาหารจีน">
+                <p>อาหารจีน<br>Chinese Cuisine</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">click here</a>
+            </div>
+            <div class="card">
+                <img src="https://blog.hungryhub.com/wp-content/uploads/2022/12/%E0%B8%A3%E0%B9%89%E0%B8%B2%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%AB%E0%B8%B2%E0%B8%A3%E0%B8%9D%E0%B8%A3%E0%B8%B1%E0%B9%88%E0%B8%87%E0%B9%80%E0%B8%A8%E0%B8%AA-600x400.jpg" alt="อาหารฝรั่งเศส">
+                <p>อาหารฝรั่งเศส<br>French Cuisine</p>
+                <a href="#" target="_blank" rel="noopener noreferrer">click here</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ข้อมูลการติดต่อ -->
+    <address>
+        <h2>ข้อมูลการติดต่อ</h2>
+        <p>ที่อยู่: 123/45 ถนนใหญ่ อำเภอเมือง จังหวัดสมมุติ</p>
+        <p>โทร: 081-234-5678</p>
+        <p>อีเมล: kimsthaieats@example.com</p>
+    </address>
+
+    <footer>
+        <p>&copy; 2024 Kim's Thai Eats. All Rights Reserved.</p>
+        <p>
+            <a href="#">Facebook</a> |
+            <a href="#">Instagram</a> |
+            <a href="#">Twitter</a>
+        </p>
+    </footer>
+
+</body>
+</html>
