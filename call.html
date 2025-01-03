@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>แบบฟอร์มกรอกข้อมูล</title>
+    <link rel="icon" href="cruelty-free.png" type="image/x-icon">
+
+</head>
+<body>
+    <h2>ติดต่อเรา</h2>
+    <form action="/submit" method="post">
+        <label for="firstname">ชื่อ:</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="ชื่อจริง" required><br><br>
+        <label for="lastname">นามสกุล:</label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="นามสกุล" required><br><br>
+        <label for="address">ที่อยู่:</label><br>
+        <textarea id="address" name="address" placeholder="ที่อยู่" rows="4" cols="50" required></textarea><br><br>
+        <label for="phone">เบอร์โทรศัพท์:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="081-234-5678" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
+        <small>รูปแบบที่รองรับ: 081-234-5678</small><br><br>
+        <label for="email">อีเมล:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required><br><br>
+        <button type="submit">ส่งข้อมูล</button>
+    </form>
+    <br> <br>
+    <button><a href="Exam.html"></a>คลิ๊กที่นี่เพื่อกลับสู่หน้าแรก</button>
+</body>
+</html>
